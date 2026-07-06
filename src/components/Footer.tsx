@@ -1,0 +1,33 @@
+import Link from 'next/link';
+import { CLIENTS } from '../data/clients';
+
+export default function Footer(){
+  return (
+    <footer className="bg-primary text-white pt-12 pb-8">
+      <div className="container grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div>
+          <h3 className="text-xl font-semibold">Elite Textile Factory</h3>
+          <p className="mt-2 text-sm text-gray-200">Premium textiles engineered for performance and sustainability. Global supply, local care.</p>
+        </div>
+        <div>
+          <h4 className="font-semibold">Quick Links</h4>
+          <ul className="mt-2 space-y-1 text-sm text-gray-200">
+            <li><Link href="/products">Products</Link></li>
+            <li><Link href="/manufacturing">Manufacturing</Link></li>
+            <li><Link href="/sustainability">Sustainability</Link></li>
+            <li><Link href="/careers">Careers</Link></li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="font-semibold">Clients</h4>
+          <div className="flex gap-3 mt-3">
+            {CLIENTS.map(c=> (
+              <img key={c.id} src={c.logo} alt={c.name} className="w-16 h-10 object-cover rounded-md bg-white/5"/>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className="container text-center text-sm text-gray-400 mt-8">© {new Date().getFullYear()} Elite Textile Factory. All rights reserved.</div>
+    </footer>
+  )
+}
