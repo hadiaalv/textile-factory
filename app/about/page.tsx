@@ -3,24 +3,24 @@ import React from 'react';
 export default function About(){
   return (
     <section className="container py-20">
-      <h1 className="text-4xl font-bold">About Elite Textile Factory</h1>
-      <p className="mt-4 text-gray-600 max-w-3xl">Founded over two decades ago, Elite Textile Factory has grown into a global leader in engineered textiles. Our facilities combine advanced weaving and knitting technologies with sustainability-first practices to deliver fabrics that perform under the most demanding conditions.</p>
+      <h1 className="text-4xl font-bold">About Awan Textile Mill</h1>
+      <p className="mt-4 text-gray-600 max-w-3xl">Awan Textile Mill is a trusted manufacturer of premium home textiles, specializing in bedsheets, towels, and baby cot sheets. We focus on comfort, durability, and clean finishing to deliver products that meet everyday needs with confidence.</p>
 
       <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="glass p-6 rounded-xl">
           <h3 className="font-semibold">Mission</h3>
-          <p className="text-sm text-gray-200 mt-2">To craft high-performance textiles that reduce environmental impact while elevating product quality.</p>
+          <p className="text-sm text-gray-200 mt-2">To create comfortable, high-quality textile products that bring value to homes, hotels, and families.</p>
         </div>
         <div className="glass p-6 rounded-xl">
           <h3 className="font-semibold">Vision</h3>
-          <p className="text-sm text-gray-200 mt-2">To be the world's most trusted textile partner for sustainable premium manufacturers.</p>
+          <p className="text-sm text-gray-200 mt-2">To become a dependable name in premium bedsheets, towels, and baby cot sheets across the market.</p>
         </div>
         <div className="glass p-6 rounded-xl">
           <h3 className="font-semibold">Core Values</h3>
           <ul className="text-sm text-gray-200 mt-2 space-y-1">
             <li>Quality & Integrity</li>
-            <li>Sustainability</li>
-            <li>Innovation</li>
+            <li>Comfort & Care</li>
+            <li>Reliable Service</li>
           </ul>
         </div>
       </div>

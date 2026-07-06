@@ -3,32 +3,32 @@ import type { Product } from '../types/index.d';
 export const PRODUCTS: Product[] = [
   {
     id: 'p1',
-    slug: 'premium-cotton-yarn',
-    name: 'Premium Cotton Yarn',
-    category: 'Yarns',
-    description: 'Long-staple cotton yarn spun for strength and softness, ideal for premium apparel and home textiles.',
-    applications: ['Apparel', 'Home Textiles', 'Medical Textiles'],
-    specs: { count: '30s', tensile: '28 cN/tex', moisture: '8%' },
-    image: 'https://images.unsplash.com/photo-1520975916363-2a5d2a2f7b2b?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=1'
+    slug: 'premium-bedsheets',
+    name: 'Premium Bedsheets',
+    category: 'Bedsheets',
+    description: 'Soft, breathable bedsheets crafted for comfort, durability, and a refined finish in homes and hotels.',
+    applications: ['Homes', 'Hotels', 'Hospitals'],
+    specs: { fabric: '100% cotton', gsm: '180-220', size: 'Single/Double/King' },
+    image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=1'
   },
   {
     id: 'p2',
-    slug: 'industrial-polyester-fabric',
-    name: 'Industrial Polyester Fabric',
-    category: 'Fabrics',
-    description: 'High-tenacity polyester woven fabric engineered for durability and color fastness in industrial applications.',
-    applications: ['Workwear', 'Upholstery', 'Outdoor Gear'],
-    specs: { weight: '320gsm', weave: 'Twill', finish: 'PU coating' },
-    image: 'https://images.unsplash.com/photo-1619710907833-b3bd1a2ff0b8?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=2'
+    slug: 'luxury-towels',
+    name: 'Luxury Towels',
+    category: 'Towels',
+    description: 'Absorbent, plush towels made for everyday comfort and long-lasting softness.',
+    applications: ['Households', 'Spas', 'Hospitals'],
+    specs: { fabric: 'Cotton terry', gsm: '500', size: 'Hand/Bath/Beach' },
+    image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=2'
   },
   {
     id: 'p3',
-    slug: 'sustainable-blend-knit',
-    name: 'Sustainable Blend Knit',
-    category: 'Knits',
-    description: 'Eco-conscious blended knit using recycled polyester and organic cotton for soft hand and reduced footprint.',
-    applications: ['Activewear', 'Casual Wear'],
-    specs: { composition: '60% recycled PET / 40% organic cotton', weight: '220gsm' },
-    image: 'https://images.unsplash.com/photo-1520975916363-2a5d2a2f7b2b?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=3'
+    slug: 'baby-cot-sheets',
+    name: 'Baby Cot Sheets',
+    category: 'Baby Linens',
+    description: 'Gentle baby cot sheets designed for safe comfort, easy care, and neat finishing.',
+    applications: ['Nurseries', 'Baby Stores', 'Hotels'],
+    specs: { fabric: 'Soft cotton', size: 'Standard cot', care: 'Machine washable' },
+    image: 'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=3'
   }
 ];

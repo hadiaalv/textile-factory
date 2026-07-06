@@ -6,8 +6,8 @@ export default function Footer(){
     <footer className="bg-primary text-white pt-12 pb-8">
       <div className="container grid grid-cols-1 md:grid-cols-3 gap-6">
         <div>
-          <h3 className="text-xl font-semibold">Elite Textile Factory</h3>
-          <p className="mt-2 text-sm text-gray-200">Premium textiles engineered for performance and sustainability. Global supply, local care.</p>
+          <h3 className="text-xl font-semibold">Awan Textile Mill</h3>
+          <p className="mt-2 text-sm text-gray-200">Premium home textiles crafted with comfort and quality in mind, from bedsheets to towels and baby cot sheets.</p>
         </div>
         <div>
           <h4 className="font-semibold">Quick Links</h4>
@@ -27,7 +27,7 @@ export default function Footer(){
           </div>
         </div>
       </div>
-      <div className="container text-center text-sm text-gray-400 mt-8">© {new Date().getFullYear()} Elite Textile Factory. All rights reserved.</div>
+      <div className="container text-center text-sm text-gray-400 mt-8">© {new Date().getFullYear()} Awan Textile Mill. All rights reserved.</div>
     </footer>
   )
 }

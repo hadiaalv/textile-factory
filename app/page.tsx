@@ -12,8 +12,8 @@ export default function Home(){
 			<Hero />
 
 			<section className="container py-16">
-				<h2 className="text-3xl font-semibold">Why Choose Elite Textile</h2>
-				<p className="mt-2 text-gray-600 max-w-2xl">Decades of engineering excellence, certified quality systems, and sustainable manufacturing.</p>
+				<h2 className="text-3xl font-semibold">Why Choose Awan Textile Mill</h2>
+				<p className="mt-2 text-gray-600 max-w-2xl">Trusted craftsmanship, dependable quality, and a strong focus on comfortable home textile products.</p>
 
 				<div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
 					<div className="glass p-6 rounded-xl">

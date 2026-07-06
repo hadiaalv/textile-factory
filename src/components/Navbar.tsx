@@ -30,7 +30,7 @@ export default function Navbar() {
   return (
     <header className={`fixed w-full z-50 top-0 transition-all ${scrolled ? 'backdrop-blur-md bg-white/6 border-b border-white/6' : 'bg-transparent'}`}>
       <div className="container flex items-center justify-between py-4">
-        <Link href="/" className="text-white text-xl font-semibold">Elite Textile Factory</Link>
+        <Link href="/" className="text-white text-xl font-semibold">Awan Textile Mill</Link>
 
         <nav className="hidden md:flex items-center gap-6 text-white">
           {LINKS.map(([label, href]) => (

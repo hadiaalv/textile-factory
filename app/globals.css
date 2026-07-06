@@ -1,3 +1,6 @@
+@import "tailwindcss";
+@config "../tailwind.config.cjs";
+
 :root{
 	--color-primary:#0F172A;
 	--color-secondary:#1E3A8A;

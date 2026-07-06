@@ -5,8 +5,8 @@ import Footer from '../src/components/Footer';
 import ClientProviders from '../src/components/ClientProviders';
 
 export const metadata = {
-	title: 'Elite Textile Factory',
-	description: 'Premium textile manufacturing — sustainable, precise, industrial-scale solutions.'
+	title: 'Awan Textile Mill',
+	description: 'Awan Textile Mill specializes in premium bedsheets, towels, and baby cot sheets with quality craftsmanship and dependable service.'
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }){
