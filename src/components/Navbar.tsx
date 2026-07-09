@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FiMenu, FiX } from 'react-icons/fi';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -30,7 +31,9 @@ export default function Navbar() {
   return (
     <header className={`fixed w-full z-50 top-0 transition-all ${scrolled ? 'backdrop-blur-md bg-primary/95 shadow-lg border-b border-white/10' : 'bg-primary/80 backdrop-blur-sm shadow-sm'}`}>
       <div className="container flex items-center justify-between py-4">
-        <Link href="/" className="text-white text-xl font-semibold">Awan Textile Mill</Link>
+        <Link href="/" className="flex items-center" aria-label="Awan Textile Mill home">
+          <Image src="/images/logos/logo.png" alt="Awan Textile Mill logo" width={160} height={48} className="h-10 w-auto md:h-12" priority />
+        </Link>
 
         <nav className="hidden md:flex items-center gap-6 text-white">
           {LINKS.map(([label, href]) => (

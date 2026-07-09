@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { CLIENTS } from '../data/clients';
 
 export default function Footer(){
@@ -6,7 +7,9 @@ export default function Footer(){
     <footer className="bg-primary text-white pt-12 pb-8">
       <div className="container grid grid-cols-1 md:grid-cols-3 gap-6">
         <div>
-          <h3 className="text-xl font-semibold">Awan Textile Mill</h3>
+          <Link href="/" className="inline-flex items-center" aria-label="Awan Textile Mill home">
+            <Image src="/images/logos/logo.png" alt="Awan Textile Mill logo" width={180} height={56} className="h-12 w-auto" priority />
+          </Link>
           <p className="mt-2 text-sm text-gray-200">Premium home textiles crafted with comfort and quality in mind, from bedsheets to towels and baby cot sheets.</p>
         </div>
         <div>
