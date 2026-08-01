@@ -23,7 +23,7 @@ export default function ProductDetail({ params }: Props){
           </ul>
           <h4 className="mt-6 font-semibold">Applications</h4>
           <div className="mt-2 flex gap-2 flex-wrap">
-            {product.applications.map(a=> <span key={a} className="bg-gray-100 px-3 py-1 rounded-full text-sm">{a}</span>)}
+            {product.applications.map(a=> <span key={a} className="bg-gold-50 text-gold-700 border border-gold-500/20 px-3 py-1 rounded-full text-sm">{a}</span>)}
           </div>
         </div>
       </div>
