@@ -9,7 +9,7 @@ export default function Footer(){
     <footer className="bg-primary text-white pt-16 pb-8 border-t border-gold-500/20">
       <div className="container grid grid-cols-1 md:grid-cols-4 gap-10">
         <div>
-          <Link href="/" className="inline-flex items-center" aria-label="Awan Textile Mill home">
+          <Link href="#home" className="inline-flex items-center rounded-3xl bg-white/10 p-3 ring-1 ring-white/10 transition hover:bg-white/15" aria-label="Awan Textile Mill home">
             <Image src="/images/logos/logo.png" alt="Awan Textile Mill logo" width={180} height={56} className="h-12 w-auto" />
           </Link>
           <p className="mt-3 text-sm text-gray-400 leading-relaxed">Premium home textiles crafted with comfort and quality in mind, from bedsheets to towels and baby cot sheets.</p>
@@ -24,11 +24,11 @@ export default function Footer(){
         <div>
           <h4 className="font-display font-semibold text-gold-400 tracking-wide">Quick Links</h4>
           <ul className="mt-4 space-y-2 text-sm text-gray-400">
-            <li><Link href="/products" className="hover:text-gold-200 transition-colors">Products</Link></li>
-            <li><Link href="/manufacturing" className="hover:text-gold-200 transition-colors">Manufacturing</Link></li>
-            <li><Link href="/certifications" className="hover:text-gold-200 transition-colors">Certifications</Link></li>
-            <li><Link href="/sustainability" className="hover:text-gold-200 transition-colors">Sustainability</Link></li>
-            <li><Link href="/careers" className="hover:text-gold-200 transition-colors">Careers</Link></li>
+            <li><Link href="#about" className="hover:text-gold-200 transition-colors">About Us</Link></li>
+            <li><Link href="#manufacturing" className="hover:text-gold-200 transition-colors">Manufacturing</Link></li>
+            <li><Link href="#quality" className="hover:text-gold-200 transition-colors">Quality Assurance</Link></li>
+            <li><Link href="#products" className="hover:text-gold-200 transition-colors">Our Products</Link></li>
+            <li><Link href="#contact" className="hover:text-gold-200 transition-colors">Contact Us</Link></li>
           </ul>
         </div>
 

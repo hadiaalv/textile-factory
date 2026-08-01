@@ -86,6 +86,20 @@ export default function Home() {
               <Link href="#products" className="btn-primary">Explore Products</Link>
               <Link href="#contact" className="btn-ghost">Request a Quote</Link>
             </div>
+            <div className="mt-8 grid gap-3 sm:grid-cols-3">
+              <div className="rounded-3xl bg-white/10 p-4 text-sm text-gray-100 ring-1 ring-white/10">
+                <strong className="block text-lg text-[#f3d28d]">Trusted</strong>
+                Hotel, retail and institutional partners.
+              </div>
+              <div className="rounded-3xl bg-white/10 p-4 text-sm text-gray-100 ring-1 ring-white/10">
+                <strong className="block text-lg text-[#f3d28d]">Certified</strong>
+                Quality standards at every production stage.
+              </div>
+              <div className="rounded-3xl bg-white/10 p-4 text-sm text-gray-100 ring-1 ring-white/10">
+                <strong className="block text-lg text-[#f3d28d]">Responsive</strong>
+                Fast turnarounds and premium support.
+              </div>
+            </div>
           </motion.div>
 
           <motion.div initial={{ opacity: 0, x: 24 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.25 }} transition={{ duration: 0.7 }} className="glass rounded-[2rem] border border-white/10 bg-white/10 p-8 text-white shadow-2xl backdrop-blur-xl">
@@ -232,7 +246,7 @@ export default function Home() {
               </div>
               <div className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
                 <FiPhone className="mt-1 text-[#f3d28d]" />
-                <span className="text-sm leading-7 text-slate-300">+92 300 0000000</span>
+                <span className="text-sm leading-7 text-slate-300">+92 321 6677 494</span>
               </div>
               <div className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
                 <FiMail className="mt-1 text-[#f3d28d]" />
@@ -257,10 +271,13 @@ export default function Home() {
             <div className="mt-6 overflow-hidden rounded-[1.25rem] border border-white/10">
               <iframe
                 title="Awan Textile Mill location"
-                src="https://www.google.com/maps?q=Faisalabad%20Pakistan&z=12&output=embed"
+                src="https://www.google.com/maps?q=awan+textile+mill+faisalabad+pakistan&z=15&output=embed"
                 className="h-48 w-full"
                 loading="lazy"
               />
+            <div className="mt-4 text-sm text-slate-300">
+              <a href="https://maps.app.goo.gl/FG78Vx8KTnqTWfiM6" target="_blank" rel="noreferrer" className="font-semibold text-[#f3d28d] hover:text-[#ffd37b]">Open exact location in Google Maps</a>
+            </div>
             </div>
           </motion.div>
         </div>

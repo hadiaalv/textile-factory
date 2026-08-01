@@ -41,8 +41,8 @@ export default function Navbar() {
   return (
     <header className={`fixed left-0 top-0 z-50 w-full border-b border-white/10 transition-all ${scrolled ? 'bg-[#0f0f0f]/90 shadow-lg backdrop-blur-md' : 'bg-[#0f0f0f]/70 backdrop-blur-sm'}`}>
       <div className="container flex items-center justify-between py-3">
-        <Link href="#home" className="flex items-center rounded-full bg-transparent p-1" aria-label="Awan Textile Mill home" onClick={() => setOpen(false)}>
-          <Image src="/images/logos/logo.png" alt="Awan Textile Mill logo" width={180} height={56} className="h-11 w-auto object-contain md:h-12" priority />
+        <Link href="#home" className="flex items-center rounded-3xl bg-white/10 p-3 ring-1 ring-white/10 transition hover:bg-white/15" aria-label="Awan Textile Mill home" onClick={() => setOpen(false)}>
+          <Image src="/images/logos/logo.png" alt="Awan Textile Mill logo" width={200} height={68} className="h-12 w-auto object-contain md:h-14" priority />
         </Link>
 
         <nav className="hidden items-center gap-6 text-sm font-medium text-slate-100 lg:flex">
