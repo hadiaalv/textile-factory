@@ -1,21 +1,22 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { Product } from '../types/index.d';
 
-export default function ProductCard({product}:{product:Product}){
+export default function ProductCard({ product }: { product: Product }) {
   return (
-    <article className="bg-white rounded-xl border border-gold-500/15 shadow-sm overflow-hidden hover:shadow-lg hover:border-gold-500/40 transition-all">
-      <div className="relative h-48 w-full">
-        <Image src={product.image} alt={product.name} fill className="object-cover" />
+    <article className="group overflow-hidden rounded-[1.5rem] border border-slate-200 bg-white shadow-[0_18px_40px_rgba(15,23,42,0.08)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_50px_rgba(15,23,42,0.14)]">
+      <div className="relative h-56 w-full overflow-hidden">
+        <Image src={product.image} alt={product.name} fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
       </div>
-      <div className="p-4">
-        <h3 className="font-display font-semibold">{product.name}</h3>
-        <p className="text-sm text-gray-600 mt-2">{product.description}</p>
-        <div className="mt-4 flex items-center justify-between">
-          <span className="text-xs uppercase tracking-wide text-gray-500">{product.category}</span>
-          <Link href={`/products/${product.slug}`} className="text-accent font-semibold hover:text-gold-600">View →</Link>
+      <div className="p-6">
+        <span className="text-xs uppercase tracking-[0.28em] text-[#b5781e]">{product.category}</span>
+        <h3 className="mt-3 font-display text-xl font-semibold text-slate-900">{product.name}</h3>
+        <p className="mt-3 text-sm leading-7 text-slate-600">{product.description}</p>
+        <div className="mt-5 flex items-center justify-between text-sm font-medium text-slate-700">
+          <span>Premium finish</span>
+          <span className="text-[#b5781e] transition-transform group-hover:translate-x-1">View details →</span>
         </div>
       </div>
     </article>
-  )
+  );
 }
