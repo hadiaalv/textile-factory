@@ -12,7 +12,7 @@ export default function ProductDetail({ params }: Props){
     <section className="container py-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="relative h-96 w-full rounded-xl overflow-hidden">
-          <Image src={product.image} alt={product.name} fill className="object-cover" />
+          <Image src={product.image} alt={product.name} fill sizes="(min-width:768px) 50vw, 100vw" className="object-cover" />
         </div>
         <div>
           <h1 className="text-3xl font-bold">{product.name}</h1>

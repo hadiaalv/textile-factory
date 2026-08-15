@@ -7,7 +7,14 @@ import Button from './Button';
 export default function Hero(){
   return (
     <section className="relative h-screen flex items-center hero-mask">
-      <Image src="https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&s=7" fill alt="textile hero" className="object-cover opacity-50" priority/>
+      <Image
+        src="https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&s=7"
+        fill
+        alt="textile hero"
+        sizes="100vw"
+        className="object-cover opacity-50"
+        priority
+      />
       <div className="container relative z-10">
         <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.8 }}>
           <span className="section-kicker !text-gold-300">Woven in Faisalabad, Pakistan</span>

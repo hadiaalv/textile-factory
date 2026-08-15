@@ -5,7 +5,13 @@ export default function ProductCard({ product }: { product: Product }) {
   return (
     <article className="group overflow-hidden rounded-[1.5rem] border border-slate-200 bg-white shadow-[0_18px_40px_rgba(15,23,42,0.08)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_50px_rgba(15,23,42,0.14)]">
       <div className="relative h-56 w-full overflow-hidden">
-        <Image src={product.image} alt={product.name} fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
+        <Image
+          src={product.image}
+          alt={product.name}
+          fill
+          sizes="(min-width:1024px) 33vw, (min-width:768px) 50vw, 100vw"
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
       </div>
       <div className="p-6">

@@ -71,20 +71,21 @@ export default function Home() {
       <div className="fixed inset-x-0 top-0 z-[60] h-1 bg-gradient-to-r from-[#d1a44a] via-[#c4983f] to-[#f2d79d]" style={{ transform: `scaleX(${progress / 100})`, transformOrigin: 'left' }} />
 
       <section id="home" data-section="home" className="relative isolate overflow-hidden bg-[#0f0f0f]">
-        <Image src="/images/towel1.jpeg" alt="Premium textile products" fill priority className="object-cover opacity-35" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(196,152,63,0.24),transparent_45%),linear-gradient(120deg,rgba(8,8,8,0.95),rgba(20,20,20,0.72))]" />
+        <Image src="/images/towel1.jpeg" alt="Premium textile products" fill priority sizes="100vw" loading="eager" className="object-cover object-center" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,6,23,0.78),rgba(2,6,23,0.48)),radial-gradient(circle_at_20%_20%,rgba(196,152,63,0.14),transparent_30%)]" />
         <div className="container relative z-10 grid min-h-screen items-center gap-12 py-24 lg:grid-cols-[1.15fr_0.85fr] lg:py-32">
           <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.25 }} transition={{ duration: 0.6 }}>
-            <span className="section-kicker !text-[#f3d28d]">Woven in Faisalabad, Pakistan</span>
-            <h1 className="mt-5 max-w-3xl text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
-              Premium textile craftsmanship for modern living.
+            <div className="bg-black/50 backdrop-blur-sm p-6 rounded-2xl">
+              <span className="section-kicker !text-[#f3d28d]">Woven in Faisalabad, Pakistan</span>
+            <h1 className="mt-5 max-w-3xl text-4xl font-extrabold leading-tight text-white sm:text-5xl lg:text-6xl drop-shadow-lg">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-gold-500 to-gold-300">Premium</span> textile craftsmanship for modern living.
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-300">
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-white">
               Awan Textile Mill blends heritage skills and contemporary design to create luxurious bedsheets, towels and baby essentials with lasting comfort.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Link href="#products" className="btn-primary">Explore Products</Link>
-              <Link href="#contact" className="btn-ghost">Request a Quote</Link>
+              <Link href="#products" className="btn-primary px-6 py-3 text-lg">Explore Products</Link>
+              <Link href="#contact" className="btn-ghost px-6 py-3 text-lg">Request a Quote</Link>
             </div>
             <div className="mt-8 grid gap-3 sm:grid-cols-3">
               <div className="rounded-3xl bg-white/10 p-4 text-sm text-gray-100 ring-1 ring-white/10">
@@ -99,6 +100,7 @@ export default function Home() {
                 <strong className="block text-lg text-[#f3d28d]">Responsive</strong>
                 Fast turnarounds and premium support.
               </div>
+            </div>
             </div>
           </motion.div>
 
