@@ -2,12 +2,12 @@
 @config "../tailwind.config.cjs";
 
 :root{
-	--color-primary:#121212;
+	--color-primary:#0b1220;
 	--color-secondary:#3a2f1f;
 	--color-accent:#C4983F;
 	--color-accent-light:#ddb968;
 	--color-light:#FAF7F0;
-	--glass: rgba(255,255,255,0.7);
+	--glass: rgba(255,255,255,0.78);
 	--radius-xl: 1rem;
 }
 
@@ -55,7 +55,7 @@ h1,h2,h3,h4,h5,h6{
 .btn-primary{
 	display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;
 	background: linear-gradient(135deg, var(--color-accent), var(--color-accent-light));
-	color:#141210;font-weight:600;padding:0.8rem 1.6rem;border-radius:999px;
+	color:#0b1220;font-weight:600;padding:0.8rem 1.6rem;border-radius:999px;
 	box-shadow:0 10px 24px rgba(196,152,63,0.24);transition:box-shadow .25s ease,transform .15s ease;
 	border: 1px solid transparent;
 }
@@ -73,6 +73,6 @@ h1,h2,h3,h4,h5,h6{
 .nav-link{position:relative;padding-bottom:4px;}
 .nav-link::after{
 	content:'';position:absolute;left:0;bottom:0;width:0;height:1.5px;
-	background:var(--color-accent-light);transition:width .25s ease;
+	background:var(--color-accent);transition:width .25s ease;
 }
 .nav-link:hover::after,.nav-link.active::after{width:100%;}
