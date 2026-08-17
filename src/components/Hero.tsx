@@ -17,11 +17,11 @@ export default function Hero(){
       />
       <div className="container relative z-10">
         <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.8 }}>
-          <span className="section-kicker !text-gold-300">Woven in Faisalabad, Pakistan</span>
-          <h1 className="mt-4 text-5xl md:text-6xl font-bold text-white leading-tight">
+          <span className="section-kicker !text-gold-300">Faisalabad, Pakistan</span>
+          <h1 className="mt-4 text-5xl md:text-6xl font-bold text-white leading-tight drop-shadow-lg">
             Awan Textile Mill <span className="text-gold-400">—</span><br className="hidden md:block"/> Comfort Woven into Every Thread
           </h1>
-          <p className="mt-6 text-lg text-gray-300 max-w-2xl">We manufacture premium bedsheets, towels, and baby cot sheets with a focus on softness, durability, and careful finishing.</p>
+          <p className="mt-6 text-lg text-white max-w-2xl drop-shadow-md">We manufacture premium bedsheets, towels, and baby cot sheets with a focus on softness, durability, and careful finishing.</p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link href="/products"><Button>Explore Products</Button></Link>
             <Link href="/manufacturing"><Button variant="ghost">Our Manufacturing</Button></Link>
